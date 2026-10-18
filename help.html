@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ask for Help · Melanated Mamas Golden Crescent</title>
+  <meta name="description" content="A private way for moms to reach out to Melanated Mamas when they need support.">
+  <!-- Link previews (Facebook, iMessage, etc.). Image and URLs must be full addresses. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Melanated Mamas">
+  <meta property="og:title" content="Ask for Help · Melanated Mamas">
+  <meta property="og:description" content="Need a hand? Reach out privately and we'll do our best to connect you with resources and support. No judgment.">
+  <meta property="og:url" content="https://melanatedmamasgc.org/help.html">
+  <meta property="og:image" content="https://melanatedmamasgc.org/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Melanated Mamas logo beside three smiling members in matching t-shirts">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="brand" aria-label="Melanated Mamas home">
+        <img src="assets/logo-mark.png" alt="" width="48" height="48">
+        <span class="brand-name">Melanated Mamas <small>Golden Crescent</small></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#connect">Connect</a></li>
+        <li><a href="index.html#events">Events</a></li>
+        <li><a href="index.html#programs">Programs</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#donate" class="btn btn-small">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="section help-intro">
+      <div class="container narrow">
+        <p class="eyebrow">Ask for Help</p>
+        <h1>We've got you, mama.</h1>
+        <p class="lead">Everybody needs a hand sometimes. Whatever you're going through, reach out and we'll do our best to connect you with resources and support. This is a no-judgment zone.</p>
+      </div>
+    </section>
+
+    <section class="section section-tinted">
+      <div class="container two-col">
+        <div>
+          <h2>How this works</h2>
+          <ol class="steps">
+            <li><strong>Tell us a little.</strong> Just enough so we know how to reach you. No paperwork here.</li>
+            <li><strong>We reach out privately.</strong> One of our team members will contact you within a few days.</li>
+            <li><strong>We talk it through together.</strong> Any details can wait until then.</li>
+          </ol>
+
+          <div class="privacy-note">
+            <h3>Your privacy</h3>
+            <p>Your request is only seen by the people who handle help requests. We never share it, and asking doesn't commit you to anything.</p>
+            <p>We aren't able to offer financial assistance right now, but we'll do our best to point you toward resources and services that can help.</p>
+            <p>Help is for moms living in the Golden Crescent area: Calhoun, DeWitt, Goliad, Gonzales, Jackson, Lavaca, and Victoria counties.</p>
+          </div>
+        </div>
+
+        <form class="form-card" data-form="help" action="https://formspree.io/f/mnpjrapo" method="POST">
+          <label>What should we call you?
+            <input type="text" name="name" required autocomplete="given-name">
+          </label>
+
+          <label>Phone number or email
+            <input type="text" name="reach" required autocomplete="off">
+          </label>
+
+          <fieldset class="choices">
+            <legend>How should we reach you?</legend>
+            <label class="checkbox"><input type="radio" name="contact_method" value="Call" required> Call</label>
+            <label class="checkbox"><input type="radio" name="contact_method" value="Text"> Text</label>
+            <label class="checkbox"><input type="radio" name="contact_method" value="Email"> Email</label>
+          </fieldset>
+
+          <fieldset class="choices">
+            <legend>Is it okay to leave a message?</legend>
+            <label class="checkbox"><input type="radio" name="leave_message" value="Yes" required> Yes, that's fine</label>
+            <label class="checkbox"><input type="radio" name="leave_message" value="No"> No, please don't</label>
+          </fieldset>
+
+          <label>What kind of support are you looking for? <span class="optional">(optional)</span>
+            <textarea name="message" rows="4" maxlength="1000"></textarea>
+            <span class="hint">No need to share account numbers or personal documents here. We'll talk through details privately.</span>
+          </label>
+
+          <!-- Spam trap: hidden from people, bots fill it in -->
+          <div class="hp" aria-hidden="true">
+            <label>Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+          </div>
+          <button type="submit" class="btn">Send privately</button>
+          <p class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-name">Melanated Mamas</p>
+        <p class="footer-sub">Golden Crescent · Victoria, TX</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="index.html#about">About</a>
+        <a href="index.html#connect">Connect</a>
+        <a href="index.html#events">Events</a>
+        <a href="index.html#programs">Programs</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#donate">Donate</a>
+        <a href="https://www.facebook.com/groups/1323276928625323" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/melanatedmgc/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <p class="footer-copy">&copy; <span id="year"></span> Melanated Mamas. A nonprofit organization.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
