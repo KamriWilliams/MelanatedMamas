@@ -21,10 +21,11 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-// Events: hide any event whose date has passed (it disappears the day after)
+// Events and the announcement banner: hide anything whose date has passed
+// (it disappears the day after)
 const today = new Date().toLocaleDateString('en-CA'); // YYYY-MM-DD in local time
-document.querySelectorAll('.event[data-date]').forEach((event) => {
-  if (event.dataset.date < today) event.hidden = true;
+document.querySelectorAll('.event[data-date], .announce[data-date]').forEach((el) => {
+  if (el.dataset.date < today) el.hidden = true;
 });
 
 // Footer year

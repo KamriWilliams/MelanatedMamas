@@ -80,6 +80,23 @@ a { color: inherit; }
 .btn-outline:hover { color: #fff; }
 .btn-small { padding: 0.5em 1.2em; font-size: 0.92rem; }
 
+/* Announcement banner */
+.announce { background: var(--gold-light); color: var(--navy); font-size: 0.95rem; }
+.announce-inner {
+  display: flex; align-items: center; justify-content: center; flex-wrap: wrap;
+  gap: 0.4rem 1.2rem; padding-block: 0.6rem; text-align: center;
+}
+.announce p { margin: 0; }
+.announce strong { font-family: "Fraunces", Georgia, serif; font-size: 1.05rem; }
+.announce-when { font-weight: 700; color: var(--purple-deep); margin-left: 0.3rem; }
+.announce-extra { margin-left: 0.3rem; }
+.announce-link {
+  display: inline-block; padding: 0.3em 1em; border-radius: 999px;
+  background: var(--navy); color: #fff; font-weight: 700; text-decoration: none;
+  transition: background 0.2s;
+}
+.announce-link:hover { background: var(--purple-deep); }
+
 /* Header */
 .site-header {
   position: sticky; top: 0; z-index: 10;
@@ -174,6 +191,7 @@ a { color: inherit; }
   transition: transform 0.2s;
 }
 .card:hover { transform: translateY(-4px); }
+.card:only-child { justify-self: center; width: min(100%, 560px); }
 .card p { color: var(--muted); margin: 0; }
 .card-icon {
   width: 52px; height: 52px; border-radius: 50%;
@@ -337,6 +355,7 @@ input:focus, select:focus, textarea:focus {
 @media (max-width: 480px) {
   .brand img { height: 42px; width: 42px; }
   .brand-name { font-size: 1.05rem; }
+  .announce-extra { display: none; }
   /* Events: date becomes a small badge on top so details get the full width */
   .event { flex-direction: column; gap: 0.9rem; padding: 1.25rem; }
   .event-date { display: flex; align-items: baseline; gap: 0.4rem; width: auto; padding: 0.35rem 0.85rem; }
