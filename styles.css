@@ -18,6 +18,8 @@
 * { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+/* Leave room for the pinned banner too, while it's showing */
+html:has(.announce:not([hidden])) { scroll-padding-top: 150px; }
 
 body {
   margin: 0;
